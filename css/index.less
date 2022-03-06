@@ -1,0 +1,482 @@
+.main-nav{
+  margin: auto;
+  width: 1260px;
+  height: 50px;
+  li{
+    width: 180px;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: #00b3f1;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #fff;
+    position: relative;
+    img{
+      position: relative;
+      top: 2px;
+      right: 2px;
+    }
+  }
+  a:link{
+    color: white;
+  }
+  a:visited
+{
+  color: white;
+}
+  
+}
+
+/*内容*/
+.container{
+  margin: auto;
+  width: 1260px;
+  height: 600px;
+  position: relative;
+  padding: 20px;
+  // background-color: #e7c5c5;
+  box-sizing: border-box;
+  .top-slideshow{
+    width: 100%;
+    height: 80px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    ul>li{
+      display: none;
+    }
+    .wrap-active{
+      display: block;
+    }
+  }
+  .main-part{
+    height: 460px;
+    width: 1220px;
+    margin-top: 20px;
+    position: relative;
+    .top{
+      height: 220px;
+      width: 1220px;
+      .left-top{
+        height: 220px;
+        width: 330px;
+        float: left;
+        position: relative;
+        .wrap-left {
+          width: 100%;
+          height: 100%;
+            li{
+              width: 100%;
+              height: 100%;
+            }
+            .spans{
+              position: absolute;
+              left: 10px;
+              bottom: 10px;
+              transition: 0.5s ease;
+              color: #fff;
+              font-size: 14px;
+              z-index: 999;
+              display: inline-block;
+              width: 180px;
+              height: 20px;
+              overflow: hidden;
+              opacity: 0;
+            }
+            .span-active{
+              bottom: 25px;
+              transition: 0.5s ease;
+              opacity: 1;
+            }
+        }
+        img{
+          width: 330px;
+          height: 200px;
+        }
+        button{
+          color: rgb(253, 253, 253);
+          height: 60px;
+          width: 30px;
+          position: absolute;
+          bottom: 90px;
+          border: none;
+          background: rgba(0,0,0,0.3);
+          font-size: 20px;
+          cursor: pointer;
+          z-index: 999;
+        }
+        .buttons{
+          opacity: 0;
+        }
+        .button-active{
+          opacity: 1;
+        }
+        .goNext{
+          right: 0;
+        }
+        .point{
+          position: absolute;
+          bottom: 20px;
+          width: 100%;
+          height: 30px;
+          background: rgba(0,0,0,0.3);
+          .point-box{
+            position: absolute;
+            right: 0;
+            top: 10px;
+            height: 10px;
+            width: 130px;
+          }
+          a{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #fff;
+            margin-right: 5px;
+          }
+          .point-active{
+            background-color: #b6dc51;
+          }
+        }
+        //***************************
+        .wrap-active{
+          display:block;
+          // span{
+          //   bottom: 25px;
+          //   color: aqua;
+          // }
+        }
+      }
+      .center-top{
+        height: 220px;
+        width: 330px;
+        margin-left: 20px;
+        float: left;
+        position: relative;
+        ul{
+          width: 100%;
+          height: 30px;
+          li{
+            height: 100%;
+            width: 110px;
+            line-height: 30px;
+          }
+        }
+        .contents-box{
+          width: 310px;
+          height: 170px;
+          display: none;
+          position: absolute;
+          left: 20px;
+          li{
+            width: 100%;
+            height: 35px;
+            text-align: left;
+            font-size: 12px;
+            color: #000;
+            line-height: 35px;
+            position: relative;
+            span{
+              display: inline-block;
+              position: absolute;
+              right: 0;
+            }
+          }
+        }
+        .contents-active{
+          display: block;
+        }
+      }
+      .right-top{
+        height: 220px;
+        width: 520px;
+        margin-left: 20px;
+        float: left;
+        .news{
+          height: 220px;
+          width: 330px;
+          float: left;
+          .contents-box{
+            display: none;
+          }
+          .contents-active{
+            display: block;
+          }
+          div{
+            .content>a{
+              position: absolute;
+              right: 0;
+              bottom: 10px;
+            }
+            .content>a:link{
+              color:#b6dc51;
+            }
+            .content>a:visited{
+              color:#b6dc51;
+            }
+            height: 165px;
+            width: 330px;
+            margin-top: 40px;
+            position: relative;
+            line-height: 25px;
+            // display: none;
+            .title{
+              height: 70px;
+              width: 330;
+              .picture{
+                height: 70px;
+                width: 120px;
+                float: left;
+                margin: 0;
+              }
+              .detail{
+                height: 70px;
+                width: 200px;
+                float: left;
+                margin-left: 10px;
+                margin-top: 0;
+              }
+            }
+            .content{
+              height: 90px;
+              width: 320px;
+              line-height: 25px;
+              margin-top: 10px;
+              text-align: left;
+              span{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+        .right-top-right{
+          height: 100%;
+          width: 130px;
+          float: right;
+          /*background-color: #8b4a4a;*/
+          text-align: center;
+          img{
+            height: 55px;
+            width: 130px;
+            margin-bottom: 8px;
+            position: relative;
+            transition: All 0.4s ease-in-out;
+            -webkit-transition: All 0.4s ease-in-out;
+            -moz-transition: All 0.4s ease-in-out;
+            -o-transition: All 0.4s ease-in-out;
+            /*right: 0;*/
+            /*display: inline-block;*/
+          }
+          img:hover{
+            -webkit-transform: translate(-10px,0);
+            -moz-transform: translate(-10px,0);
+            -o-transform: translate(-10px,0);
+            -ms-transform: translate(-10px,0);
+          }
+        }
+      }
+    }
+    .bottom{
+      height: 220px;
+      width: 1220px;
+      // position: relative;
+      margin-top: 20px;
+      .left-bottom{
+        height: 220px;
+        width: 330px;
+        float: left;
+        position: relative;
+        ul{
+          width: 100%;
+          height: 30px;
+          li{
+            width: 110px;
+            height: 100%;
+            line-height: 30px;
+          }
+          
+        }
+        .contents-box{
+          position: absolute;
+          left: 15px;
+          display: none;
+          width: 310px;
+          background-color: rgb(177, 102, 102);
+          height: 200px;
+          ul{
+            width: 310px;
+            height: 100%;
+            li{
+              width: 100%;
+              height: 40px;
+              text-align: left;
+              font-size: 12px;
+              color: #000;
+              line-height: 35px;
+              background-color: #f4f4f5;
+              position: relative;
+              span{
+                display: inline-block;
+                position: absolute;
+                right: 0;
+              }
+            }
+          }
+        }
+        .contents-active{
+          display: block;
+        }
+      }
+      .center-bottom{
+        height: 220px;
+        width: 330px;
+        margin-left: 20px;
+        float: left;
+        .wrap-box{
+          height: 85px;
+          width: 100%;
+          overflow: hidden;
+          margin-top:20px;
+          position: relative;
+          .last-wrap{
+            width: 330px;
+            height: 85px;
+            position: absolute;
+            left: 0;
+            display: flex;
+            transition: 0.5s ease;
+            img{
+              width: 330px;
+              height: 85px;
+            }
+          }
+        }
+        
+        button{
+          color: #fff;
+          position: absolute;
+          bottom: 17px;
+          z-index: 1000;
+          border: none;
+          background: none;
+          font-size: 30px;
+          cursor: pointer;
+        }
+        
+        .goNext{
+          right: 0;
+        }
+        .contents-active{
+          display: block;
+        }
+      }
+      .right-bottom{
+        height: 220px;
+        width: 520px;
+        margin-left: 20px;
+        float: left;
+        .left-tab{
+          height: 220px;
+          width: 100px;
+          float: left;
+          background-color: rgb(70, 28, 28);
+          ul{
+            width: 100%;
+            height: 100%;
+            li{
+              height: 55px;
+              line-height: 55px;
+              width: 100%;
+              font-size: 16px;
+              text-align: center;
+              margin-bottom: 2px;
+            }
+          }
+        }
+        .right-list{
+          height: 240px;
+          width: 380px;
+          float: left;
+          margin-left: 40px;
+          .contents-box{
+            display: none;
+            ul{
+              height: 240px;
+              width: 100%;
+              li{
+                width: 100%;
+                height: 40px;
+                position: relative;
+                span{
+                  display: inline-block;
+                  position: absolute;
+                  right: 0;
+                }
+              }
+            }
+          }
+          .contents-active{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+/*内容区导航条*/
+.contents-nav {
+  position: relative;
+  /*width: 330px;*/
+  background: #eef1f5;
+  li{
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    width: 110px;
+    background-color: #eef1f5;
+    float: left;
+  }
+  .contents-nav-active{
+    background-color: #00b3f1;
+    a{
+      color: #fff;
+    }
+  }
+}
+.contents-box li{
+  list-style-image: url("http://www.xianning.gov.cn/images/xn2018_index_icon32.png");
+}
+.contents-box li:hover a{
+  color: #00b3f1;
+}
+.wrap-left li{
+  display: none;
+  position: relative;
+  // span {
+  //   position: absolute;
+  //   left: 10px;
+  //   bottom: 0px;
+  //   transition: 0.5s ease;
+  //   color: #fff;
+  //   font-size: 14px;
+  //   z-index: 999;
+  //   display: inline-block;
+  //   width: 180px;
+  //   height: 20px;
+  //   overflow: hidden;
+  //   background-color: rgb(240, 70, 70);
+  // }
+}
+ a:link{
+  color:#615f5f;
+}
+
+a:visited{
+  color:#615f5f;
+}
